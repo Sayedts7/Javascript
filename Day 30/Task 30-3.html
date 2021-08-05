@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x <= 10) {
+    alert("Value must be above 10");
+    return false;
+  }
+}
+
+</script>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
